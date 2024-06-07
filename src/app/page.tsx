@@ -1,21 +1,18 @@
 import Heading from "@/components/header/Heading";
 import Navbar from "../components/header/nav/NavBar";
+import OfferSection from "@/components/offer/OfferSection";
+import CarSection from "@/components/car-section/CarSection";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="pt-[70px]"> {/* Pushes content below the fixed navbar */}
         <Heading />
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     
-
-
-
-
-     
+        <main className="flex h-full flex-col items-center justify-between p-24">
+          <OfferSection/>
+          <CarSection/>
         </main>
-      </div>
+    
     </>
   );
 }
