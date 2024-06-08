@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import headingImage from '../../../public/car.png';
+import headingImage from '../../../public/headingimg.png';
 import Button from "../ui/Button";
 import { useEffect, useState } from "react";
 

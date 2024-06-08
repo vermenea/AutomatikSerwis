@@ -12,15 +12,14 @@ const ListItem = ({ children } : ChildrenProps) => (
     </li>
 );
 
-// Define the main functional component for the services section
 export default function ServicesSection() {
     return (
         <section className="h-full w-full flex flex-wrap my-16 text-gray-300 rounded-lg bg-cover bg-center"
             style={{ 
-                backgroundImage: `url('${blueImage.src}')`, // URL for the background image
+                backgroundImage: `url('${blueImage.src}')`, 
             }}>
             <div className="flex flex-col justify-around bg-opacity-75 rounded-lg p-6"> 
-                {/* Added padding and background to make text readable over image */}
+            
                 <h2 className="text-3xl font-bold py-6">Szeroki zakres napraw</h2>
                 <p className="font-semibold py-4">
                     Zajmujemy się szeroko pojętą mechaniką samochdową, diagnostyką i serwisem eksploatacyjnym.
