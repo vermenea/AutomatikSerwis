@@ -8,3 +8,7 @@ export interface HamburgerProps {
 export type WrapperProps = {
     children: ReactNode;
   };
+
+export type ChildrenProps = {
+    children: ReactNode;
+}
