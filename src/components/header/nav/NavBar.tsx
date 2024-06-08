@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
 import Hamburger from './Hamburger';
+import Logo from '@/components/Logo';
 
 const Navbar: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
@@ -17,10 +18,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className='fixed top-0 z-10 w-full bg-black/50 backdrop-blur-md text-gray-300 p-3 font-semibold flex justify-between items-center min-h-[70px] gap-10'>
-      <header className='flex justify-center items-center'>
-        <Image src="/icon.png" alt="AutomatikSerwis logo" width={25} height={25} className="m-2"/>
-        <Link href="/" className="text-2xl italic">AutomatikSerwis</Link>
-      </header>
+      <Logo/>
       
       <ul className={`flex justify-between items-center gap-15 text-gray-300 ${isActive ? 'flex-col absolute top-[70px] left-0 w-full p-3 transition-all ease-in-out duration-700 bg-black bg-opacity-50 backdrop-blur-lg' : 'hidden sm:flex'}`}>
         <li onClick={removeActive} className="my-4 mx-2">
