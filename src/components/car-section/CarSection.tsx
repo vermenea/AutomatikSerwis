@@ -1,17 +1,42 @@
 import Image from "next/image";
+import Button from "../ui/Button";
 
+const icons = [
+    { src: "/bmw.png", alt: "BMW" },
+    { src: "/mercedes.png", alt: "Mercedes" },
+    { src: "/voklsvagen.png", alt: "Volkswagen" },
+    { src: "/audi.png", alt: "Volkswagen" },
+    { src: "/peugeot.png", alt: "Volkswagen" },
+    { src: "/kia.png", alt: "Volkswagen" },
+    { src: "/mitsubishi.png", alt: "Volkswagen" },
+    { src: "/opel.png", alt: "Opel" },
+]
 export default function CarSection(){
-    return <section className="min-h-100vh w-full flex items-center justify-center py-20 bg-slate-300 rounded-lg">
-        <div className="flex flex-col justify-evenly items-center m-2 text-black">
-       <h2 className="py-6 text-2xl font-bold">Auta które naprawiamy</h2>
+    return <section className="min-h-100vh w-full flex items-center justify-center py-6 m-16 bg-slate-300 rounded-lg">
+        <div className="flex flex-col justify-center items-center text-black text-center">
+       <h2 className="py-6 text-xl font-bold lg:text-2xl">Auta, które naprawiamy</h2>
 
-       <p>Zajmujemy się szeroko pojętą 
+       <p className="text-sm lg:text-xl px-2">Zajmujemy się szeroko pojętą 
 mechaniką samochdową, diagnostyką  
-i serwisem eksploatacyjnym</p>
+i serwisem eksploatacyjnym.</p>
+<div className="flex flex-wrap justify-center items-center py-6">
+                    {icons.map(({ src, alt }, index) => (
+                        <div key={index} className="flex items-center justify-center relative w-24 h-24 md:w-36 md:h-36">
+                            <Image 
+                                src={src} 
+                                alt={alt} 
+                                layout="fill" 
+                                objectFit="contain" 
+                                quality={80}
+                                className="rounded-xl p-1"
+                            />
+                        </div>
+                    ))}
+                </div>
         
-<div className="flex justify-evenly items-center text-gray-300">
-        <button className="px-12 py-2 bg-sky-500 rounded-md md:px-8 md:py-2 m-4 uppercase">Umów się</button>
-        <button className="px-12 py-2 bg-sky-500 rounded-md m-4 uppercase">Sprawdź usługi</button>
+<div className="flex flex-col justify-evenly items-center text-gray-300">
+    <p className="text-black py-6">Nie widzisz marki swojego samochodu?</p>
+       <Button title="zadzwoń i zapytaj"/>
         </div>
         </div>
     </section>
