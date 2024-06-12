@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Navbar />
         <Heading />
-        <main className="flex h-full flex-col items-center justify-between p-12 md:p-24">
+        <main className="flex h-full flex-col items-center justify-between p-12 md:py-24 md:px-36">
           <ServicesSection/>
         <CarSection/>
           <OfferSection/>
