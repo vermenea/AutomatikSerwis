@@ -12,3 +12,6 @@ export type WrapperProps = {
 export type ChildrenProps = {
     children: ReactNode;
 }
+export interface LinkToProps  {
+    linkTo: () => void;
+}

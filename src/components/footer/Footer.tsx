@@ -34,20 +34,20 @@ export default function Footer() {
 
         <address className="flex flex-col items-start md:items-end text-sm not-italic">
           <div className="flex items-center mb-2">
-            <Image src={mail} alt="Email icon" width={20} height={20} className="mr-2"/>
-            <a href="mailto:automatikserwis@wp.pl" className="hover:underline">
+            <Link href="mailto:automatikserwis@wp.pl" className="hover:underline">
               automatikserwis@wp.pl
-            </a>
+            </Link>
+            <Image src={mail} alt="Email icon" width={20} height={20} className="ml-2"/>
           </div>
           <div className="flex items-center mb-2">
-            <Image src={phone} alt="Phone icon" width={20} height={20} className="mr-2"/>
-            <a href="tel:+48604693207" className="hover:underline">
+            <Link href="tel:+48604693207" className="hover:underline">
               +48 604-693-207
-            </a>
+            </Link>
+            <Image src={phone} alt="Phone icon" width={20} height={20} className="ml-2"/>
           </div>
           <div className="flex items-center">
-            <Image src={clock} alt="Clock icon" width={20} height={20} className="mr-2"/>
-            <p>pt-sob - 8:00-17:00</p>
+            <p>pon - pt  8:00-17:00</p>
+            <Image src={clock} alt="Clock icon" width={20} height={20} className="ml-2"/>
           </div>
         </address>
       </div>
