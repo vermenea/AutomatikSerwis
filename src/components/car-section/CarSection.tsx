@@ -12,8 +12,8 @@ const icons = [
     { src: "/opel.png", alt: "Opel" },
 ]
 export default function CarSection(){
-    return <section className="min-h-100vh w-full flex items-center justify-center py-6 m-16 bg-slate-300 rounded-lg">
-        <div className="flex flex-col justify-center items-center text-black text-center">
+    return <section className="min-h-100vh w-full md:w-2/3 flex items-center justify-center py-6 m-16">
+        <div className="flex flex-col justify-center items-center text-slate-300 text-center">
        <h2 className="py-6 text-xl font-bold lg:text-2xl">Auta, które naprawiamy</h2>
 
        <p className="text-sm lg:text-xl px-2">Zajmujemy się szeroko pojętą 
@@ -34,8 +34,8 @@ i serwisem eksploatacyjnym.</p>
                     ))}
                 </div>
         
-<div className="flex flex-col justify-evenly items-center text-gray-300">
-    <p className="text-black py-6">Nie widzisz marki swojego samochodu?</p>
+<div className="flex flex-col justify-evenly items-center">
+    <p className=" py-6">Nie widzisz marki swojego samochodu?</p>
        <Button title="zadzwoń i zapytaj"/>
         </div>
         </div>
