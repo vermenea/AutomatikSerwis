@@ -7,6 +7,7 @@ import phone from '../../../public/phone-call.svg';
 import mail from '../../../public/mail.svg';
 import clock from '../../../public/clock.svg';
 import Logo from "../Logo"; 
+import map from "../../../public/map-pin.svg";
 
 export default function Footer() {
   // State to hold the current year
@@ -45,9 +46,13 @@ export default function Footer() {
             </Link>
             <Image src={phone} alt="Phone icon" width={20} height={20} className="ml-2"/>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center mb-2">
             <p>pon - pt  8:00-17:00</p>
             <Image src={clock} alt="Clock icon" width={20} height={20} className="ml-2"/>
+          </div>
+          <div className="flex items-center">
+            <p>ul. Tadeusza Wendy 5, 81-341 Gdynia</p>
+            <Image src={map} alt="Map icon" width={20} height={20} className="ml-2"/>
           </div>
         </address>
       </div>
