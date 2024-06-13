@@ -8,7 +8,6 @@ import OpenHours from "@/components/open-hours/OpenHours";
 export default function Home() {
   return (
     <>
-      <Navbar />
         <Heading />
         <main className="flex h-full flex-col items-center justify-between p-16 md:py-24 md:px-36">
           <ServicesSection/>

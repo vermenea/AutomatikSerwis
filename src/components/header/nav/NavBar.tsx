@@ -22,10 +22,10 @@ const Navbar: React.FC = () => {
       
       <ul className={`flex justify-between items-center gap-15 text-gray-300 ${isActive ? 'flex-col absolute top-[70px] left-0 w-full p-3 transition-all ease-in-out duration-700 bg-black bg-opacity-50 backdrop-blur-lg' : 'hidden sm:flex'}`}>
         <li onClick={removeActive} className="my-4 mx-2">
-          <Link href="/uslugi" className="no-underline relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#49BEFF] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Usługi</Link>
+          <Link href="/uslugi" className="no-underline relative text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#49BEFF] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Usługi</Link>
         </li>
         <li onClick={removeActive} className="my-4 mx-2">
-          <Link href="/kontakt" className="no-underline relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#49BEFF] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Kontakt</Link>
+          <Link href="/kontakt" className="no-underline relative text-lg w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#49BEFF] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Kontakt</Link>
         </li>
       </ul>
       <Hamburger isActive={isActive} toggleActive={toggleActiveClass} />
