@@ -15,3 +15,7 @@ export type ChildrenProps = {
 export interface LinkToProps  {
     linkTo: () => void;
 }
+export interface ButtonProps {
+    title: string;
+    href: string;
+}
