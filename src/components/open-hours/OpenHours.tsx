@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function OpenHours(){
     return (
-        <section className="flex flex-col justify-center items-center h-36 py-6 text-slate-300 bg-gradient-radial from-slate-900 to-black rounded-lg">
+        <section className="flex flex-col justify-center items-center h-36 mt-28 text-slate-300 bg-gradient-radial from-slate-900 to-black rounded-lg">
             <div className="relative flex flex-col justify-center items-center">
                 <Image src="/clock.svg" alt="Niebieski zegar" height={25} width={25}/>
             <h2 className="text-2xl z-10">Jesteśmy otwarci od poniedziałku do piątku</h2>
