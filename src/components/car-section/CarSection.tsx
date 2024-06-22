@@ -36,7 +36,7 @@ i serwisem eksploatacyjnym.</p>
         
 <div className="flex flex-col justify-evenly items-center">
     <p className="text-sm lg:text-xl py-6">Nie widzisz marki swojego samochodu?</p>
-       <Button title="zadzwoń i zapytaj"/>
+       <Button title="zadzwoń i zapytaj" href="/kontakt"/>
         </div>
         </div>
     </section>

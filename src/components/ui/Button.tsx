@@ -1,9 +1,6 @@
-import { ReactNode } from "react";
+import Link from "next/link";
+import { ButtonProps } from "@/util/types";
 
-interface childrenProps {
-    title: string;
-}
-
-export default function Button({title} : childrenProps){
-    return  <button className="px-4 py-2 bg-sky-500 rounded-md m-2 uppercase text-gray-300 md:px-8 md:py-2">{title}</button>
+export default function Button({title,href} : ButtonProps){
+    return  <Link href={href || "#"} className="px-4 py-2 bg-sky-500 rounded-md m-2 uppercase text-gray-300 md:px-8 md:py-2" >{title}</Link>
 }

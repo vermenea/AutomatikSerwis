@@ -28,8 +28,8 @@ export default function OfferSection(){
        </div>
        
         <div className="flex justify-start items-center">
-        <Button title="Umów się"/>
-        <Button title="Sprawdź usługi"/>
+        <Button title="Umów się" href="/kontakt"/>
+        <Button title="Sprawdź usługi" href="/uslugi"/>
         </div>
        
     </section>

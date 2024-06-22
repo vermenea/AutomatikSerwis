@@ -32,7 +32,7 @@ export default function ServicesSection() {
                     <ListItem>wulkanizacja</ListItem>
                 </ul>
                 <div className="flex justify-start items-center">
-                    <Button title="więcej" />
+                    <Button title="więcej" href="/uslugi"/>
                 </div>
             </div>
         </section>
